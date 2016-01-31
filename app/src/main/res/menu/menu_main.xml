@@ -1,0 +1,26 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/menu_rodvin"
+        android:title="@string/label_rodvin"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/menu_rodvinsflaske"/>
+    <item
+        android:id="@+id/menu_hvitvin"
+        android:title="@string/label_hvitvin"
+        android:orderInCategory="200"
+        app:showAsAction="always"
+        android:icon="@drawable/menu_hvitvinsflaske" />
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="@string/label_hvitvin"
+        android:orderInCategory="300"
+        app:showAsAction="always"
+        android:icon="@drawable/ikon_sort" />
+</menu>

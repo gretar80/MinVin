@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MinVin</string>
+    <string name="title_activity_ny_vin"></string>
+    <string name="title_activity_vin_detaljer"></string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hint_navn">Vin navn</string>
+    <string name="hint_argang">Årgang</string>
+    <string name="hint_alkohol">Alkohol</string>
+    <string name="hint_land">Land</string>
+    <string name="hint_pris">Pris</string>
+    <string name="hint_notater">Notater</string>
+    <string name="label_poeng">Poeng</string>
+    <string name="label_rodvin">Rødvin</string>
+    <string name="label_hvitvin">Hvitvin</string>
+    <string name="label_valuta">Kr</string>
+
+    <string name="menu_lagre">Lagre</string>
+    <string name="menu_avbryt">Avbryt</string>
+    <string name="menu_rodvin">Vis rødvin</string>
+    <string name="menu_hvitvin">Vis hvitvin</string>
+    <string name="menu_sorter">Sorter</string>
+    <string name="menu_endre">Endre</string>
+    <string name="menu_slett">Slett</string>
+
+    <string-array name="dropdown_liste">
+        <item>Rødvin</item>
+        <item>Hvitvin</item>
+    </string-array>
+</resources>
+

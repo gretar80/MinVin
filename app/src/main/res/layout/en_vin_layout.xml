@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/valgt_liste"
+    android:orientation="horizontal"
+    android:padding="6dip"
+    android:descendantFocusability="blocksDescendants">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:id="@+id/bilde" >
+        <ImageView
+            android:layout_width="29dip"
+            android:layout_height="55dip"
+            android:src="@drawable/ikon_rodvinflaske"
+            android:id="@+id/listVinFigur"
+            android:focusable="false"
+            android:focusableInTouchMode="false"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bilde"
+        android:layout_alignTop="@+id/bilde"
+        android:id="@+id/listVinNavn"
+        android:text="Rosemount"
+        android:textColor="#141414"
+        android:textStyle="bold"
+        android:textSize="16dip"
+        android:layout_marginBottom="2dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listVinNavn"
+        android:layout_toRightOf="@+id/bilde"
+        android:id="@+id/listVinArgang"
+        android:text="Argang"
+        android:textColor="#444444"
+        android:textSize="12dip" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listVinPoeng"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listVinNavn"
+        android:layout_marginBottom="15dip"
+        android:gravity="right"
+        android:text="Poeng"
+        android:textColor="#242424"
+        android:textSize="16dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listVinLand"
+        android:text="Land"
+        android:textColor="#444444"
+        android:textSize="12dip"
+        android:layout_below="@+id/listVinArgang"
+        android:layout_toEndOf="@+id/bilde"
+        android:layout_marginTop="3dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listVinPris"
+        android:text="Pris"
+        android:textColor="#444444"
+        android:textSize="12dip"
+        android:gravity="end"
+        android:layout_alignBaseline="@+id/listVinLand"
+        android:layout_alignBottom="@+id/listVinLand"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listVinAlkohol"
+        android:text="Alkohol"
+        android:textColor="#444444"
+        android:textSize="12dip"
+        android:gravity="end"
+        android:layout_above="@+id/listVinLand"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

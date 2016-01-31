@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/NyKontaktLayout" >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ikon_kamera"
+            android:background="@drawable/bakgrunn_kameraknapp"
+            android:id="@+id/imageview_bilde"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_navn"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/hint_navn"
+            android:layout_below="@+id/imageview_bilde"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_poeng"
+            android:layout_below="@+id/felt_navn"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toStartOf="@+id/label_poeng2"
+            android:max="100"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_poeng"
+            android:id="@+id/label_poeng1"
+            android:layout_below="@+id/felt_navn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            android:gravity="end"
+            android:textColor="#3F51B5"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0/10"
+            android:id="@+id/label_poeng2"
+            android:layout_below="@+id/felt_navn"
+            android:layout_alignParentEnd="true"
+            android:textSize="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:gravity="end"
+            android:textColor="#3F51B5"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_type"
+            android:layout_below="@+id/label_poeng2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:checked="false"
+            android:textOn="@string/label_hvitvin"
+            android:textOff="@string/label_rodvin"
+            android:thumb="@drawable/switch_vin"
+            android:layout_marginLeft="25dp"
+            />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_pris"
+            android:hint="@string/hint_pris"
+            android:inputType="numberDecimal"
+            android:layout_below="@+id/label_poeng2"
+            android:layout_alignStart="@+id/felt_alkohol"
+            android:layout_toStartOf="@+id/label_valuta"
+            android:gravity="end"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_valuta"
+            android:id="@+id/label_valuta"
+            android:textSize="18dp"
+            android:layout_marginRight="25dp"
+            android:layout_below="@+id/label_poeng2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:textIsSelectable="false"
+            android:textColor="#3F51B5"
+            />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_argang"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/hint_argang"
+            android:inputType="number"
+            android:maxLength="4"
+            android:layout_below="@+id/felt_type"
+            android:layout_alignParentStart="true"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_alkohol"
+            android:hint="@string/hint_alkohol"
+            android:gravity="end|right"
+            android:maxLength="4"
+            android:inputType="numberDecimal"
+            android:layout_above="@+id/felt_land"
+            android:layout_toStartOf="@+id/label_prosent"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:id="@+id/label_prosent"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/felt_alkohol"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/felt_land"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/hint_land"
+            android:inputType="text"
+            android:layout_below="@+id/felt_argang"
+            android:layout_alignParentStart="true"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/felt_notater"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:hint="@string/hint_notater"
+            android:gravity="top"
+            android:layout_below="@+id/felt_land"
+            android:layout_alignParentStart="true"
+            android:textColor="#3F51B5"
+            android:textColorHint="@color/tekstHint"
+            />
+
+    </RelativeLayout>
+</ScrollView>
