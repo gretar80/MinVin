@@ -25,4 +25,4 @@ Sort by name, grade, price, year, etc. either ascending or descending<br>
 ![alt tag](https://raw.github.com/gretar80/MinVin/master/screenshots/06.png)
 <hr>
 Class diagram<br>
-![alt tag](https://raw.github.com/gretar80/MinVin/master/screenshots/02png)
+![alt tag](https://raw.github.com/gretar80/MinVin/master/screenshots/02.png)
